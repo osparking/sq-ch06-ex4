@@ -32,7 +32,7 @@ public class LoggingAspect {
 		logger.info(msgBfr(joinPoint));
 		logger.info("호출 차단 - 호출 전");
 		Object result = joinPoint.proceed();
-		logger.info("호출 차단 - 호출 전");
+		logger.info("호출 차단 - 호출 후");
 		return result;
 	}
 }
